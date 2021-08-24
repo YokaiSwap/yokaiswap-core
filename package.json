@@ -1,0 +1,34 @@
+{
+  "name": "yokaiswap-core",
+  "description": "🎛 Core contracts for the yokai protocol",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": ">=14"
+  },
+  "scripts": {
+    "clean": "rimraf ./cache && rimraf ./artifacts",
+    "compile": "yarn run clean && hardhat compile",
+    "deploy": "ts-node scripts/deploy-yokai-factory.ts"
+  },
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "@polyjuice-provider/ethers": "^0.0.1-rc8",
+    "@tsconfig/recommended": "^1.0.1",
+    "@types/node": "^16.7.1",
+    "@typescript-eslint/eslint-plugin": "^4.29.3",
+    "@typescript-eslint/parser": "^4.29.3",
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^3.4.1",
+    "ethers": "^5.4.1",
+    "hardhat": "^2.1.1",
+    "prettier": "^2.3.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.3.5"
+  }
+}
